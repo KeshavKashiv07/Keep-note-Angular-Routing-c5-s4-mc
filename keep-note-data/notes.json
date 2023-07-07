@@ -1,0 +1,105 @@
+{
+  "users": [
+    {
+      "firstName": "Keshav",
+      "lastName": "Kashiv",
+      "password": "Singh@123",
+      "confirmPassword": "Singh@123",
+      "gander": "Male",
+      "age": "24",
+      "email": "keshavkashiv9650@gmail.com",
+      "phone": "9650764456",
+      "address": {
+        "street": "Preet Vihar",
+        "city": "Gr.Noida",
+        "state": "UP",
+        "zipCode": "203207"
+      },
+      "id": 1
+    },
+    {
+      "firstName": "Keshav",
+      "lastName": "Singh Kashiv ",
+      "password": "Luckey@123",
+      "confirmPassword": "Luckey@123",
+      "gander": "Male",
+      "age": "20",
+      "email": "Rahul@gmail.com",
+      "phone": "9659764456",
+      "address": {
+        "street": "Preet Vihar Colony",
+        "city": "Gr.noida",
+        "state": "UP",
+        "zipCode": "123456"
+      },
+      "id": 2
+    },
+    {
+      "firstName": "Keshav",
+      "lastName": "Kashiv",
+      "password": "Keshav@123",
+      "confirmPassword": "Keshav@123",
+      "gander": "Male",
+      "age": "18",
+      "email": "keshavkashiv9650@gmail.com",
+      "phone": "9765541234",
+      "address": {
+        "street": "Preet Vihar",
+        "city": "Gr.Noida",
+        "state": "UP",
+        "zipCode": "12345"
+      },
+      "id": 3
+    }
+  ],
+  "notes": [
+    {
+      "id": 1,
+      "title": "sample-note",
+      "content": "This is a sample note added for testing purpose",
+      "reminderDate": "2022-09-09T18:30:00.000Z",
+      "category": "Office",
+      "priority": "High"
+    },
+    {
+      "id": 3,
+      "title": "challenge: typescript",
+      "content": "solution developed, need to submit for evaluation",
+      "reminderDate": "2022-09-09T18:30:00.000Z",
+      "category": "Office",
+      "priority": "Low"
+    },
+    {
+      "id": 4,
+      "title": "practice-exercise: typescript",
+      "content": "solution reviewed, refactoring in progress",
+      "reminderDate": "2022-09-11T18:30:00.000Z",
+      "category": "Review",
+      "priority": "Critical"
+    },
+    {
+      "id": 5,
+      "title": "challenge: SPA",
+      "content": "Keep Note app solution development in progress. Header design completed. Code to display notes in progress.",
+      "reminderDate": "2022-09-09T18:30:00.000Z",
+      "category": "Review",
+      "priority": "Medium"
+    },
+    {
+      "title": "Review Meeting",
+      "content": "Documentation of project should be completed before review meeting",
+      "reminderDate": "2022-12-07T18:30:00.000Z",
+      "category": "Office",
+      "priority": "Critical",
+      "id": 6
+    },
+    {
+      "title": "Exam",
+      "content": "Collect the content to prepare for exam",
+      "reminderDate": "2022-09-14T18:30:00.000Z",
+      "category": "Office",
+      "priority": "Medium",
+      "id": 7
+    }
+  ]
+}

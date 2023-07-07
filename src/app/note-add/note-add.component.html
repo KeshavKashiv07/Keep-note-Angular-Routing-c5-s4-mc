@@ -1,0 +1,53 @@
+<div id="note-input" class="p-2 ms-5 row">
+    <div class="col-lg-4 border py-3">
+
+      <h2>New Note</h2>
+      <form (ngSubmit)="onSubmit(noteForm)" #noteForm="ngForm" class="p-3">
+<!-- Note-Title -->
+        <mat-form-field class="w-100">
+        <mat-label>Note Title</mat-label>
+            <input  matInput type="text" name="title" required [(ngModel)]="note.title" required  #noteTitle="ngModel">
+            <mat-error *ngIf="noteTitle.errors?.['required']">note title is required</mat-error>
+        </mat-form-field>
+
+<!-- Content -->
+        <mat-form-field class="w-100">
+            <mat-label>Content</mat-label>
+            <textarea  matInput type="text" required [(ngModel)]="note.content" name="content" required minlength="5" #content="ngModel"></textarea>
+            <mat-error *ngIf="content.errors?.['required']">note content is required</mat-error>
+            <mat-error *ngIf="content.errors?.['minlength']">
+                minimum {{content.errors?.['minlength']?.requiredLength}} characters
+            </mat-error>
+        </mat-form-field>
+
+<!-- Date -->
+<mat-form-field class="w-100">
+    <mat-label>Reminder date</mat-label><br>
+    <input  matInput type="datetime-local" required [(ngModel)]="note.reminderDate" name="reminderDate" required #reminderDate="ngModel">
+    <mat-error *ngIf="reminderDate.errors?.['required']">reminder date is required</mat-error>
+</mat-form-field>
+<br/>
+
+<!-- Category -->
+<mat-form-field class="w-100">
+    <mat-label>Category</mat-label>
+    <input  matInput type="text" required [(ngModel)]="note.category" name="category" #category="ngModel">
+</mat-form-field>
+<br/>
+
+<!-- priority -->
+<mat-radio-group name="priority" #priority="ngModel" [(ngModel)]="note.priority" >
+    <mat-label class="fw-semibold">Priority</mat-label><br>
+    <mat-radio-button value="Low" class="mt-2 mb-4">Low</mat-radio-button>
+    <mat-radio-button value="Medium" class="ms-3">Medium</mat-radio-button>
+    <mat-radio-button value="High" class="ms-3">High</mat-radio-button>
+    <mat-radio-button value="Critical" class="ms-3 ">Critical</mat-radio-button>
+</mat-radio-group><br>
+
+<!-- Button -->
+<button mat-raised-button color="primary" type="submit" [disabled]="noteForm.invalid" mat-mini-fab><mat-icon>save</mat-icon></button>
+        
+</form> 
+
+</div>        
+</div>

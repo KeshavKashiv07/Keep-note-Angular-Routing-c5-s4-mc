@@ -1,0 +1,22 @@
+div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 90vw;
+    margin-right: 10px;
+}
+.icon {
+    margin: 5px;
+}
+
+#manage_accounts{
+    text-decoration: none;
+    color: white;
+}
+
+#home {
+    text-decoration: none;
+    color: white;
+}
+

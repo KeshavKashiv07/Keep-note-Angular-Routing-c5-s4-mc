@@ -1,0 +1,10 @@
+app-search{
+    text-align: center;
+}
+
+.Add-icon{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}

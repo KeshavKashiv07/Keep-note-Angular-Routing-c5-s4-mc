@@ -1,0 +1,13 @@
+<form class="note-delete">
+    <h2 class="ms-2">Delete Note</h2>
+    <mat-form-field appearance="fill" class="w-25">
+        <input matInput  placeholder="Note title" [(ngModel)]="note.title" name="title">
+    </mat-form-field><br>
+    
+    <mat-form-field appearance="fill" class="w-25">
+        <textarea matInput placeholder="Note content" [(ngModel)]="note.content" name="content" cols="40" rows="5"></textarea>
+    </mat-form-field><br>
+    
+    <button class="ms-2" color="primary" mat-raised-button (click)="delete()" type="submit"> Delete</button>
+   
+</form>

@@ -1,0 +1,19 @@
+<div>
+    <!-- <app-register-form-component></app-register-form-component> -->
+    <app-note-add (noteAdded)="onNoteAdded($event)" *ngIf="ShowMe"></app-note-add>
+    <app-search (searchTextChanged)="onSearchTextChanged($event)"></app-search>
+    
+    <div class="row m-2">
+        <app-note *ngFor="let note of notes" [note]="note" class="col-lg-2 border-info m-3 p-0 cards"></app-note>
+    </div> 
+    
+    <div class="Add-icon">
+        <button mat-fab color="primary" type="button" aria-label="Icon button with a add icon" (click)="toggleAdd()">
+          <mat-icon>add</mat-icon>
+        </button>
+    </div>
+    
+</div>
+
+<!-- [note] it is a property child component
+"note" it is a source property of parent component  -->

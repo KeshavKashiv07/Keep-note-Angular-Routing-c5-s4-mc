@@ -1,0 +1,7 @@
+#note-input{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 90vw;
+    margin-left: 20px;   
+}
